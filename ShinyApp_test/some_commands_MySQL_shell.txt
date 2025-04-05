@@ -1,0 +1,31 @@
+\sql
+\connect root@localhost
+
+SHOW DATABASES;
+CREATE DATABASE multiomics_test;
+USE multiomics_test;
+SELECT DATABASE();
+
+# A table was created from inside Jupyter notebook. The code used was the one below (Python3):
+# with engine.connect() as conn:
+#     conn.execute("""CREATE TABLE IF NOT EXISTS graphs (
+#         id INT AUTO_INCREMENT PRIMARY KEY,
+#         graph_name VARCHAR(255),
+#         description TEXT,
+#         graph_type VARCHAR(255),
+#         data_file_path VARCHAR(255),
+#         image_file_path VARCHAR(255),
+#         created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+#     );""")
+    
+#     # Insert metadata into the database
+#     for meta in metadata:
+#         conn.execute("""INSERT INTO graphs (graph_name, description, graph_type, data_file_path, image_file_path)
+#                         VALUES (%s, %s, %s, %s, %s);""",
+#                      (meta["graph_name"], meta["description"], meta["graph_type"], meta["data_file_path"], meta["image_file_path"]))
+
+# print("Sample data and metadata added to MySQL.")
+
+SHOW TABLES;
+DESCRIBE graphs;
+SELECT * FROM graphs;
