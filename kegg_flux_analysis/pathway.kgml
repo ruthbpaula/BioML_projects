@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<pathway name="mock_pathway" org="fly">
+    <entry id="1" name="cpd:C00031" type="compound"/>
+    <entry id="2" name="cpd:C00022" type="compound"/>
+    <entry id="3" name="cpd:C00123" type="compound"/>
+    <entry id="4" name="cpd:C00267" type="compound"/>
+    <entry id="5" name="cpd:C00345" type="compound"/>
+    
+    <relation entry1="1" entry2="2" type="PPrel">
+        <subtype name="reaction" value="R00001"/>
+    </relation>
+    <relation entry1="2" entry2="3" type="PPrel">
+        <subtype name="reaction" value="R00002"/>
+    </relation>
+    <relation entry1="3" entry2="4" type="PPrel">
+        <subtype name="reaction" value="R00003"/>
+    </relation>
+    <relation entry1="4" entry2="5" type="PPrel">
+        <subtype name="reaction" value="R00004"/>
+    </relation>
+</pathway>

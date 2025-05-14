@@ -1,0 +1,99 @@
+<?xml version="1.0"?>
+<!DOCTYPE pathway SYSTEM "https://www.kegg.jp/kegg/xml/KGML_v0.7.2_.dtd">
+<pathway name="path:dme00240" org="dme" number="00240"
+         title="Pyrimidine metabolism"
+         image="https://www.kegg.jp/kegg/pathway/dme/dme00240.png"
+         link="https://www.kegg.jp/kegg-bin/show_pathway?dme00240">
+    <entry id="1" name="cpd:C00063" type="compound"
+        link="https://www.kegg.jp/dbget-bin/www_bget?C00063">
+        <graphics name="CTP" fgcolor="#000000" bgcolor="#FFFFFF"
+             type="circle" x="246" y="325" width="8" height="8"/>
+    </entry>
+    <entry id="2" name="cpd:C00075" type="compound"
+        link="https://www.kegg.jp/dbget-bin/www_bget?C00075">
+        <graphics name="UTP" fgcolor="#000000" bgcolor="#FFFFFF"
+             type="circle" x="246" y="148" width="8" height="8"/>
+    </entry>
+    <entry id="3" name="cpd:C00105" type="compound"
+        link="https://www.kegg.jp/dbget-bin/www_bget?C00105">
+        <graphics name="UMP" fgcolor="#000000" bgcolor="#FFFFFF"
+             type="circle" x="377" y="148" width="8" height="8"/>
+    </entry>
+    <entry id="4" name="cpd:C00112" type="compound"
+        link="https://www.kegg.jp/dbget-bin/www_bget?C00112">
+        <graphics name="CDP" fgcolor="#000000" bgcolor="#FFFFFF"
+             type="circle" x="306" y="325" width="8" height="8"/>
+    </entry>
+    <entry id="5" name="cpd:C00055" type="compound"
+        link="https://www.kegg.jp/dbget-bin/www_bget?C00055">
+        <graphics name="CMP" fgcolor="#000000" bgcolor="#FFFFFF"
+             type="circle" x="377" y="325" width="8" height="8"/>
+    </entry>
+    <entry id="6" name="cpd:C00015" type="compound"
+        link="https://www.kegg.jp/dbget-bin/www_bget?C00015">
+        <graphics name="UDP" fgcolor="#000000" bgcolor="#FFFFFF"
+             type="circle" x="306" y="148" width="8" height="8"/>
+    </entry>
+    <entry id="10" name="dme:Dmel_CG3658" type="gene" reaction="rn:R00512"
+        link="https://www.kegg.jp/dbget-bin/www_bget?dme:Dmel_CG3658">
+        <graphics name="PyK" fgcolor="#000000" bgcolor="#BFFFBF"
+             type="rectangle" x="327" y="148" width="46" height="17"/>
+    </entry>
+    <entry id="11" name="dme:Dmel_CG4549" type="gene" reaction="rn:R02092"
+        link="https://www.kegg.jp/dbget-bin/www_bget?dme:Dmel_CG4549">
+        <graphics name="Ndk" fgcolor="#000000" bgcolor="#BFFFBF"
+             type="rectangle" x="327" y="325" width="46" height="17"/>
+    </entry>
+    <entry id="12" name="dme:Dmel_CG3632 dme:Dmel_CG6092 dme:Dmel_CG8353" type="gene" reaction="rn:R00156"
+        link="https://www.kegg.jp/dbget-bin/www_bget?dme:Dmel_CG3632+dme:Dmel_CG6092+dme:Dmel_CG8353">
+        <graphics name="ade5..." fgcolor="#000000" bgcolor="#BFFFBF"
+             type="rectangle" x="377" y="371" width="46" height="17"/>
+    </entry>
+    <entry id="13" name="dme:Dmel_CG3624 dme:Dmel_CG5976" type="gene" reaction="rn:R00429"
+        link="https://www.kegg.jp/dbget-bin/www_bget?dme:Dmel_CG3624+dme:Dmel_CG5976">
+        <graphics name="Cad..." fgcolor="#000000" bgcolor="#BFFFBF"
+             type="rectangle" x="433" y="371" width="46" height="17"/>
+    </entry>
+    <entry id="14" name="dme:Dmel_CG17273" type="gene" reaction="rn:R01876"
+        link="https://www.kegg.jp/dbget-bin/www_bget?dme:Dmel_CG17273">
+        <graphics name="ade3" fgcolor="#000000" bgcolor="#BFFFBF"
+             type="rectangle" x="494" y="371" width="46" height="17"/>
+    </entry>
+    <entry id="15" name="dme:Dmel_CG4733" type="gene" reaction="rn:R02325"
+        link="https://www.kegg.jp/dbget-bin/www_bget?dme:Dmel_CG4733">
+        <graphics name="CG4733" fgcolor="#000000" bgcolor="#BFFFBF"
+             type="rectangle" x="550" y="371" width="46" height="17"/>
+    </entry>
+    <relation entry1="2" entry2="6" type="ECrel">
+        <subtype name="compound" value="2"/>
+    </relation>
+    <relation entry1="6" entry2="3" type="ECrel">
+        <subtype name="compound" value="6"/>
+    </relation>
+    <relation entry1="1" entry2="4" type="ECrel">
+        <subtype name="compound" value="1"/>
+    </relation>
+    <relation entry1="4" entry2="5" type="ECrel">
+        <subtype name="compound" value="4"/>
+    </relation>
+    <reaction id="10" name="rn:R00512" type="reversible">
+        <substrate id="2" name="cpd:C00075"/>
+        <product id="6" name="cpd:C00015"/>
+    </reaction>
+    <reaction id="11" name="rn:R00522" type="reversible">
+        <substrate id="6" name="cpd:C00015"/>
+        <product id="3" name="cpd:C00105"/>
+    </reaction>
+    <reaction id="12" name="rn:R00156" type="reversible">
+        <substrate id="5" name="cpd:C00055"/>
+        <product id="13" name="cpd:C00178"/>
+    </reaction>
+    <reaction id="13" name="rn:R00429" type="irreversible">
+        <substrate id="13" name="cpd:C00178"/>
+        <product id="14" name="cpd:C00380"/>
+    </reaction>
+    <reaction id="14" name="rn:R01876" type="irreversible">
+        <substrate id="14" name="cpd:C00380"/>
+        <product id="15" name="cpd:C00099"/>
+    </reaction>
+</pathway>

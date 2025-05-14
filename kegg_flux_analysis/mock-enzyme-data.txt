@@ -1,0 +1,7 @@
+enzyme_id,name,conserved
+10,PyK,1
+11,Ndk,1
+12,ade5,1
+13,Cad,0
+14,ade3,1
+15,CG4733,0
