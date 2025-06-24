@@ -1,0 +1,4 @@
+paths:
+  - file: ./brain_vacuole_labels.json
+transformations:
+  - read_json_lines: {}

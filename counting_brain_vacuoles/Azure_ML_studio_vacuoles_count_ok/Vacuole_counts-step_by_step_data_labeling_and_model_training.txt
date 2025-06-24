@@ -1,0 +1,24 @@
+1. Create ML labels on Azure ML Studio
+- Create workspace
+- New -> Data labeling project -> Computer vision -> Object detection
+2. Export labels as .json
+3. Convert .json to .jsonl file using Python code (json_to_jsonl_conversion.py)
+- There's probably a way to load .json generated on Azure ML Studio in the next step directly,
+but I don't know how
+4. Create data - Table schema
+- Under Assets (hamburger menu): Data -> "Tabular" -> Select .jsonl (from local files) -> Select "stream" in image_url (schema section)
+5. Submit an automated ML job
+- Under Authoring (hamburger menu): Automated ML -> New job
+- Under Task type & data: Select data created on step 4
+- Under Task settings: Select target column to image_details (DataRow)
+!!!Important - For computer vision tasks, a GPU is necessary.
+Unfortunately, it seems that no GPUs are easily available in free trial.
+Because of that, may need to get a personal/institutional paid subscription.
+
+There are some videos explaining how to use AutoML for object detection tasks - but it is a little cumbersome.
+Example video:
+https://www.youtube.com/watch?v=NYMe3D3Bg84
+
+Better idea is just to use Azure ML Studio to label images and create a .json.
+
+Than, run the code ChatGPT helped me create.
